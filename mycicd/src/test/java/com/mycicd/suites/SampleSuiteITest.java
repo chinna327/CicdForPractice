@@ -7,6 +7,6 @@ public class SampleSuiteITest  {
 	@Test
 	  public void sampleTest() {
 
-	System.out.println("This time for CI implmentatino sixth time");
+	System.out.println("This time for CI implmentatino sixth time -3");
 	}
 }
