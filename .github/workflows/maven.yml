@@ -3,12 +3,20 @@
 
 name: Java CI with Maven
 
+
 permissions:
   contents: write
   actions: write
   pages: write
 
 on:
+  workflow_dispatch:
+    inputs:
+      Reporting:
+        description: 'slack report?'
+        type: boolean
+        default: false
+        
   push:
     branches: [ main ]
   pull_request:
