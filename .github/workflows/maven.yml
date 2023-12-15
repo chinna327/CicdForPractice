@@ -14,9 +14,12 @@ on:
     inputs:
       Reporting:
         description: 'slack report?'
-        type: boolean
-        default: false
-        
+        type: choice
+        default: 'false'
+        options:
+          - "true"
+          - "false"
+
   push:
     branches: [ main ]
   pull_request:
